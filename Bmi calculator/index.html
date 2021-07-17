@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi calculator</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Bmi calculator</h1>
+        Height in feet
+        <input type="text" id="feet"><br>
+        weight in kg
+        <input type="text" id="kg"><br>
+        <input type="submit" id="submit" value="Calculate" onclick="result2()"><br><br>
+
+        <div id="result"></div>
+
+        <div id="weightGuide">
+            <h2>BMI weight guide</h2>
+            under 18.5 - you are under weighted need to gain some weight <br>
+            18.5-24.9  = you are healthy <br>
+            25-29.9 = you need to do exercize <br>
+            30-34.9 = first stage of over weight <br>
+            35-39.9 = second stage of overweight <br>
+            40 = you can die because of over weight at any moment; <br>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
