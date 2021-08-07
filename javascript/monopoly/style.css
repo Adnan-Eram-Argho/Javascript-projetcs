@@ -11,8 +11,12 @@ button{
     background-color: tomato;
     padding:30px;
     transition: 0.5s;
+    border-radius: 6px;
 }
 button:hover{
     background-color:lightcoral ;
     padding:30px;
+    font-weight: bold;
+    font-size: 15px;
+
 }
