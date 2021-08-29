@@ -53,13 +53,43 @@ var ourServices = [
   }
   
 ];
+var previousArrow = document.getElementById("service-previous");
+var nextArrow = document.getElementById("service-next");
+var serviceText = document.getElementById("service-text");
+var serviceTitle = document.getElementById("service-title");
+
+var currentService = 0 ; 
 
 
+nextArrow.onclick =function () {
+  if (currentService == (ourServices.length -1 )){
+    currentService = 0;
+  }else{
+    currentService += 1;
+  }
 
+  var title = ourServices[currentService].title;
+  var text = ourServices[currentService].text;
+  serviceTitle.innerHTML = title;
+  serviceText.innerHTML = text;
+}
+
+previousArrow.onclick =function () {
+  if (currentService ==   0 ){
+    currentService = ourServices.length -1;
+  }else{
+    currentService -= 1;
+  }
+  var title = ourServices[currentService].title;
+  var text = ourServices[currentService].text;
+  serviceTitle.innerHTML = title;
+  serviceText.innerHTML = text;
+}
 
 
 // Footer
 
+document.getElementById("current_year").innerHTML = 2021;
 
 
   
